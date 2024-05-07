@@ -2,7 +2,7 @@ name: Deploy content to Pages
 
 on:
   schedule:
-    - cron: 0,5 * * * *
+    - cron: 0,60 * * * *
 
 env:
   TZ: Asia/Shanghai
