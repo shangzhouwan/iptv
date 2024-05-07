@@ -66,4 +66,4 @@ jobs:
         git branch -m main
 
     - name: Push
-      run: git push -f origin main
+      run: git push origin main
