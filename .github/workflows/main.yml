@@ -62,8 +62,8 @@ jobs:
         git checkout --orphan latest_branch
         git add -A
         git commit -am "author:shangzhouwan --> ${{ steps.date.outputs.date }}"
-        git branch -D main
-        git branch -m main
+        git branch -D daily-build
+        git branch -m daily-build
 
     - name: Push
-      run: git push origin main
+      run: git push -f origin daily-build
